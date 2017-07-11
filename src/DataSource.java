@@ -1,8 +1,4 @@
-
-
-import java.util.Random;
 import java.util.Scanner;
-
 
 public class DataSource {
 	
@@ -20,9 +16,13 @@ public class DataSource {
 	int width_tab;						//szerokosc tablicy
 	int tmpSlat;
 	int tmpSlon;	
-
 	
-public void Map() {
+public DataSource() {
+	Map();
+}
+
+protected void Map() {
+	
 	Scanner scan = new Scanner(System.in);
 		//Wskazanie lewego-dolnego punktu
 		System.out.println("Podaj szerokosc geograficzna lewego-gornego punktu");
@@ -90,6 +90,8 @@ public void Map() {
 		
 		slat = rtwsp_geo_lat - tmpSlat;
 		slon = rtwsp_geo_lon - tmpSlon;
+	
 	}
+
 
 }

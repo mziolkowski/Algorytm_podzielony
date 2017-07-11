@@ -1,8 +1,7 @@
 
 
-public class Display extends ImplementationOfAlgorithm{
-	
-	protected void Display(Integer[][] netMap2, Boolean[][] booleanNetMap2, String[][] waterDirection2) {
+public class Display extends Algorithm {
+	public void Displaying(Integer[][] netMap2, Boolean[][] booleanNetMap2, String[][] waterDirection2) {
 		System.out.println(" ");
 		System.out.println("TABLICA netMap");
 		for(int m = 0; m < netMap2.length; m++) {
@@ -27,5 +26,6 @@ public class Display extends ImplementationOfAlgorithm{
 				System.out.println(" ");
 		}
 	}
+
 	
 }
